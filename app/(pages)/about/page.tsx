@@ -34,12 +34,12 @@ const About = () => {
 							Our mission is to provide professional, reliable, and personalized legal services that empower our clients to achieve their goals and protect their interests. We strive to uphold the highest standards of integrity, excellence, and client satisfaction in all our endeavors
 						</p>
 						<div className="flex overflow-hidden rounded aspect-square">
-							<Image className="w-full object-cover" src={missinFeatured} alt="about-1"/>
+							<Image className="w-full object-cover bg-slate-100" src={missinFeatured} alt="about-1"/>
 						</div>
 					</div>
 					<div className=" flex flex-col gap-6">
 						<div className="flex overflow-hidden rounded aspect-square">
-							<Image className="w-full object-cover" src={missinFeatured2} alt="about-2"/>
+							<Image className="w-full object-cover bg-slate-100" src={missinFeatured2} alt="about-2"/>
 						</div>
 						<SectionHeading summary="Our History" />
 						<ul className="list-disc">
@@ -59,7 +59,7 @@ const About = () => {
             {/* TEAM GRID */}
 			<section className="py-12 padding-x">
 				<span className="text-title">Meet our team</span>
-				<div className="my-6 grid grid-cols-1 lg:grid-cols-4 gap-4">
+				<div className="my-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
 					{
 						teamData.map((lawyer: LawyerType, index: number) => (
 							<TeamCard key={index} lawyer={lawyer} />

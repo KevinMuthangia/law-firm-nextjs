@@ -22,7 +22,7 @@ const Team = () => {
 			/>
 			<section className="padding-x py-4">
 				<span className="text-title">Meet our team</span>
-				<div className="my-6 grid grid-cols-1 lg:grid-cols-4 gap-4">
+				<div className="my-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
 					{
 						teamData.map((lawyer: LawyerType, index: number) => (
 							<TeamCard key={index} lawyer={lawyer} />
