@@ -2,32 +2,106 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+    background: #fcfcfc;
+  }
+  
+  /* -----------TYPOGRAPHY---------------- */
+  h1 {
+    @apply text-6xl;
+  }
+  
+  h2 {
+    @apply text-5xl;
+  }
+  
+  h3 {
+    @apply text-3xl;
+  }
+  
+  h4 {
+    @apply text-lg;
+  }
+  
+  h5 {
+    @apply text-base;
+  }
+  
+  @media screen and (max-width: 1023px) {
+      h1 {
+        @apply text-3xl;
+      }
+      h2 {
+        @apply text-2xl;
+      }
+      h3 {
+        @apply text-xl;
+      }
+  }
+  
+
+.flex--between {
+    @apply flex justify-between items-center;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+.faq-shadow {
+    box-shadow: 0 1px 2px rgba(0,0,0,0.15)
+}
+
+.padding-x {
+    @apply px-[6%];
+}
+
+.hover-text-effect,
+.hover-text-effect-selected {
+    @apply text-[#475569]
+}
+
+.hover-text-effect::after,
+.hover-text-effect-selected::after {
+    content: "";
+    display: block;
+    margin: auto;
+    width: 0%;
+    height: 3px;
+    background: #475569;
+    border-radius: 4px;
+    transition: width 0.25s ease-in;
+}
+
+.hover-text-effect:hover::after,
+.hover-text-effect-selected::after {
+    width: 100%;
+}
+
+/* Title */
+.text-title {
+    @apply mb-2 lg:mb-8 text-slate-600 uppercase tracking-widest text-sm;
+}
+
+
+@media screen and (max-width: 1023px) {
+    .hover-text-effect::after,
+    .hover-text-effect-selected::after {
+        @apply hidden;
+    }
+
+    .hover-text-effect {
+        @apply text-[#fcfcfc] hover:text-blue-400;
+    }
+
+    .hover-text-effect-selected {
+        @apply text-blue-400;
+    }
+}
+
+
+/* MOBILE NAV */
+.slide-in-right {
+    @apply right-0 ;
+}
+
+.slide-out-right {
+    @apply right-[-270px] md:right-[-320px];
 }

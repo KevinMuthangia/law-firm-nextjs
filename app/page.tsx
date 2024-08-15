@@ -1,113 +1,67 @@
+import type { Metadata } from "next";
 import Image from "next/image";
+import Link from "next/link";
+import Feature from "@/components/feature";
+import ServicesGrid from "@/components/servicesGrid";
+import SectionHeading from "@/components/sectionHeading";
+import Testimonials from "@/components/Testimonials";
+import Contact from "@/components/contact";
+import hero from '@/public/assets/hero.jpg';
+import aboutFeatured1 from "@/public/assets/about-featured.jpg";
+import aboutFeatured2 from "@/public/assets/about-featured-2.jpg";
+
+
+export const metadata: Metadata = {
+  title: "Home | Jurispro",
+  description: "At Jurispro, our success is driven by the expertise, dedication, and passion of our legal professionals. Each member of our team brings a unique set of skills and experience, ensuring that we provide top-tier legal representation tailored to your needs.",
+};
+
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">app/page.tsx</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:size-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+    <main>
+      <section className="padding-x py-6 my-6 lg:my-8 grid grid-cols-1 lg:grid-cols-2 gap-4">
+        {/* -------------HERO------------ */}
+        <div className="flex justify-center flex-col gap-4">
+          <h1 className="text-slate-800 font-bold lg:w-2/3">Elevating  Legal Standards</h1>
+          <p className="text-lg text-slate-600 font-medium lg:w-2/3">Your Trusted Partner in Finance & Business Law for 25+ Years </p>
+        <div>
+          <Link href='/contact' className="inline-block py-3 px-2 rounded-md text-lg text-[#fcfcfc] bg-slate-800">Book Free Consultation</Link>
+          </div>
         </div>
-      </div>
-
-      <div className="relative z-[-1] flex place-items-center before:absolute before:h-[300px] before:w-full before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-full after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 sm:before:w-[480px] sm:after:w-[240px] before:lg:h-[360px]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className="mb-32 grid text-center lg:mb-0 lg:w-full lg:max-w-5xl lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Docs{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Learn{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Templates{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Explore starter templates for Next.js.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Deploy{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-balance text-sm opacity-50">
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
+        <div className="flex overflow-hidden rounded">
+          <Image className="w-full" width={500} height={500} priority src={hero} alt="hero" />
+        </div>
+      </section>
+      {/* -------------ABOUT US------------ */}
+      <section className="py-12 padding-x bg-slate-200">
+        <SectionHeading title="about us" summary="Delivering Professional Legal Services Tailored to You" />
+        <div className="my-6 lg:my-12 grid grid-cols-1 lg:grid-cols-2 gap-12">
+          <div className="flex flex-col-reverse lg:flex-col gap-6">
+            <p className="text-lg leading-8 text-slate-600 lg:w-[90%]">
+              At JurisPro, our focus is crystal clear: delivering exceptional legal services tailored to the dynamic needs of our clients in finance and business. With over 25 years of experience, our team is dedicated to professionalism, providing personalized solutions and unwavering support. We believe in collaborative partnerships, guiding clients through intricate legal landscapes with integrity and diligence.
+            </p>
+            <div className="flex overflow-hidden rounded aspect-square">
+              <Image className="w-full" src={aboutFeatured1} alt="about-1"/>
+            </div>
+          </div>
+          <div className=" flex flex-col gap-6">
+            <div className="flex overflow-hidden rounded aspect-square">
+              <Image className="w-full object-cover object-top" src={aboutFeatured2} alt="about-2"/>
+            </div>
+            <p className="flex-1 text-lg leading-8 text-slate-600 lg:w-[90%]">
+              JurisPro is your trusted ally in the legal arena of finance and business. With a steadfast commitment to professionalism, we offer tailored solutions to complex legal challenges. Backed by over 25 years of experience, our team is dedicated to your success, providing unwavering support and expertise every step of the way
+            </p>
+          </div>
+        </div>
+      </section>
+      <Feature />
+      <section className="py-12 padding-x bg-slate-200">
+        <SectionHeading title='practice area' summary='A wide range of legal services to solve ant Legal Issues' />
+        <ServicesGrid />
+		  </section>
+      <Testimonials />
+      <Contact />
     </main>
   );
 }
