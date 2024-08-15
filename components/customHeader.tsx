@@ -16,7 +16,7 @@ const CustomHeader = ({ banner, title, summary}: CustomHeaderProps) => {
 			{
 				banner && (
 				<div className="my-4 w-full mx-auto">
-					<Image src={banner} priority alt="banner" className="w-full object-cover" />
+					<Image src={banner} priority alt="banner" className="w-full object-cover bg-slate-100" />
 				</div>
 				)
 			}
