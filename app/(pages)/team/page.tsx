@@ -20,7 +20,7 @@ const Team = () => {
 			summary={"Dedicated Professionals Committed to Your Success"}
 			banner={banner}
 			/>
-			<section className="padding-x py-4">
+			<section className="padding-x py-4 bg-slate-200">
 				<span className="text-title">Meet our team</span>
 				<div className="my-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
 					{
