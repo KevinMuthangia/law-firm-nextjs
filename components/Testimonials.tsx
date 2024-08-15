@@ -1,3 +1,4 @@
+"use client"
 import { testimonialData } from "@/constants/data";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from 'react-responsive-carousel';
@@ -24,10 +25,10 @@ const Testimony = ({ name, text, date }: TestimonyProps) => {
 
 const Testimonials = () => {
 	return (
-		<section className="hidden py-6 lg:py-12 padding-x">
+		<section className="py-6 lg:py-12 padding-x">
 			<span className="text-title">Testimonials</span>
 			<div className="py-12">
-				{/* <Carousel infiniteLoop={true} autoPlay={true} showThumbs={false} showStatus={false} showIndicators={false} stopOnHover={true} >
+				<Carousel infiniteLoop={true} autoPlay={true} showThumbs={false} showStatus={false} showIndicators={false} stopOnHover={true} >
 					{
 						testimonialData.map((testimony: TestimonialType, index: number) => (
 							<Testimony
@@ -38,7 +39,7 @@ const Testimonials = () => {
 							/>
 						))
 					}
-				</Carousel> */}
+				</Carousel>
 			</div>
 		</section>
 	);
