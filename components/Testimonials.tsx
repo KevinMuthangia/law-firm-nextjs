@@ -24,7 +24,7 @@ const Testimony = ({ name, text, date }: TestimonyProps) => {
 
 const Testimonials = () => {
 	return (
-		<section className="py-6 lg:py-12 padding-x">
+		<section className="hidden py-6 lg:py-12 padding-x">
 			<span className="text-title">Testimonials</span>
 			<div className="py-12">
 				{/* <Carousel infiniteLoop={true} autoPlay={true} showThumbs={false} showStatus={false} showIndicators={false} stopOnHover={true} >
