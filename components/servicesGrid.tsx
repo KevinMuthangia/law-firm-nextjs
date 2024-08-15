@@ -12,7 +12,7 @@ const Service = ({ service }: ServiceProps) => {
 		<div className="p-8 border border-slate-300 target-chil">
 			<h5 className="mb-4 uppercase font-medium text-slate-800">{service.title}</h5>
 			<div className="flex">
-				<Image src={service.image} alt={service.title} className="w-full object-cover" />
+				<Image src={service.image} alt={service.title} className="w-full object-cover bg-slate-100" />
 			</div>
 			<p className="my-2 text-sm text-slate-600">{service.summary}</p>
 			{/* MAKE SERVIVCE DETAILS PAGE */}

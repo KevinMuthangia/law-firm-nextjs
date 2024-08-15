@@ -30,7 +30,7 @@ export default function Home() {
           </div>
         </div>
         <div className="flex overflow-hidden rounded">
-          <Image className="w-full" width={500} height={500} priority src={hero} alt="hero" />
+          <Image className="w-full bg-slate-100" width={500} height={500} priority src={hero} alt="hero" />
         </div>
       </section>
       {/* -------------ABOUT US------------ */}
@@ -42,12 +42,12 @@ export default function Home() {
               At JurisPro, our focus is crystal clear: delivering exceptional legal services tailored to the dynamic needs of our clients in finance and business. With over 25 years of experience, our team is dedicated to professionalism, providing personalized solutions and unwavering support. We believe in collaborative partnerships, guiding clients through intricate legal landscapes with integrity and diligence.
             </p>
             <div className="flex overflow-hidden rounded aspect-square">
-              <Image className="w-full" src={aboutFeatured1} alt="about-1"/>
+              <Image className="w-full bg-slate-100" src={aboutFeatured1} alt="about-1"/>
             </div>
           </div>
           <div className=" flex flex-col gap-6">
             <div className="flex overflow-hidden rounded aspect-square">
-              <Image className="w-full object-cover object-top" src={aboutFeatured2} alt="about-2"/>
+              <Image className="w-full object-cover object-top bg-slate-100" src={aboutFeatured2} alt="about-2"/>
             </div>
             <p className="flex-1 text-lg leading-8 text-slate-600 lg:w-[90%]">
               JurisPro is your trusted ally in the legal arena of finance and business. With a steadfast commitment to professionalism, we offer tailored solutions to complex legal challenges. Backed by over 25 years of experience, our team is dedicated to your success, providing unwavering support and expertise every step of the way
