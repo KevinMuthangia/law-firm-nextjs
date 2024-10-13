@@ -1,6 +1,8 @@
 
 import type { Metadata } from "next";
 import Image from "next/image";
+import { teamData } from "@/constants/data";
+import { LawyerType } from "@/types";
 import CustomHeader from "@/components/customHeader";
 import SectionHeading from "@/components/sectionHeading";
 import TeamCard from "@/components/teamCard";
@@ -8,8 +10,6 @@ import Feature from "@/components/feature";
 import banner from '@/public/assets/about-banner.jpg';
 import missinFeatured from '@/public/assets/mission-featured-1.png';
 import missinFeatured2 from '@/public/assets/mission-featured-2.png';
-import { teamData } from "@/constants/data";
-import { LawyerType } from "@/types";
 
 
 export const metadata: Metadata = {
@@ -56,6 +56,7 @@ const About = () => {
 					</div>
 				</div>
 			</section>
+			
             {/* TEAM GRID */}
 			<section className="py-12 padding-x">
 				<span className="text-title">Meet our team</span>

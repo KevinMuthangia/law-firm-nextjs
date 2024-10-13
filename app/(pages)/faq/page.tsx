@@ -1,9 +1,9 @@
 import type { Metadata } from 'next';
-import { FAQType } from '@/types';
 import Link from 'next/link';
+import { FAQType } from '@/types';
+import { faqData } from "@/constants/data";
 import  Accordion from "@/components/accordion";
 import CustomHeader from '@/components/customHeader';
-import { faqData } from "@/constants/data";
 
 export const metadata: Metadata = {
     title: "FAQs | Jurispro",

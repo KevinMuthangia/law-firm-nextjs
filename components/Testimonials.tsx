@@ -1,14 +1,9 @@
 "use client"
-import { testimonialData } from "@/constants/data";
-import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
+import "react-responsive-carousel/lib/styles/carousel.min.css"; 
 import { Carousel } from 'react-responsive-carousel';
-import { TestimonialType } from "@/types";
+import { TestimonialType, TestimonyProps } from "@/types";
+import { testimonialData } from "@/constants/data";
 
-interface TestimonyProps {
-    name: string
-    text: string
-    date: string
-}
 
 const Testimony = ({ name, text, date }: TestimonyProps) => {
 	return (

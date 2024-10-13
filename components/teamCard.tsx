@@ -1,9 +1,6 @@
-import { LawyerType } from "@/types";
 import Image from "next/image";
+import { TeamCardProps } from "@/types";
 
-interface TeamCardProps {
-    lawyer: LawyerType
-}
 
 
 const TeamCard = ({ lawyer }: TeamCardProps) => {

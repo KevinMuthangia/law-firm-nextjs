@@ -1,11 +1,7 @@
 "use client"
 import { useState } from "react";
 import { BiChevronDown } from "react-icons/bi";
-
-interface AccordionProps  {
-    question: string;
-    answer: string;
-}
+import { AccordionProps } from "@/types";
 
 const Accordion = ({question, answer}: AccordionProps) => {
 	const [isExtended, setIsExtended] = useState(false);

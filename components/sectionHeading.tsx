@@ -1,7 +1,5 @@
-interface SectionHeadingProps {
-    title?: string;
-    summary: string
-}
+import { SectionHeadingProps } from "@/types";
+
 
 const SectionHeading = ({ title, summary }: SectionHeadingProps) => {
 	return (

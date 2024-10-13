@@ -1,7 +1,7 @@
-import logo from '@/public/assets/logo-dark.svg';
 import Image from 'next/image';
 import Link from 'next/link';
 import { FaFacebookF, FaLinkedinIn, FaTwitter } from "react-icons/fa";
+import logo from '@/public/assets/logo-dark.svg';
 
 const Footer = () => {
 	return (

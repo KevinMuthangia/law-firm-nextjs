@@ -1,11 +1,7 @@
 import { FeatureType } from "@/types";
 import { featureData } from "../constants/data";
+import { FeatureItemProps } from "@/types";
 
-
-interface FeatureItemProps {
-    title: string;
-    text: string
-}
 
 
 const FeatureItem = ({title, text}: FeatureItemProps) => {

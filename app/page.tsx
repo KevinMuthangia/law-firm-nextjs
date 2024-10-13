@@ -33,6 +33,7 @@ export default function Home() {
           <Image className="w-full bg-slate-100" width={500} height={500} priority src={hero} alt="hero" />
         </div>
       </section>
+
       {/* -------------ABOUT US------------ */}
       <section className="py-12 padding-x bg-slate-200">
         <SectionHeading title="about us" summary="Delivering Professional Legal Services Tailored to You" />
@@ -55,12 +56,20 @@ export default function Home() {
           </div>
         </div>
       </section>
+    
+      {/* -------------FEATURES------------  */}
       <Feature />
+
+      {/* -------------SERVICES------------  */}
       <section className="py-12 padding-x bg-slate-200">
         <SectionHeading title='practice area' summary='A wide range of legal services to solve ant Legal Issues' />
         <ServicesGrid />
 		  </section>
+
+      {/* -------------TESTIMONIALS------------ */}
       <Testimonials />
+
+      {/* -------------CONTACT FORM------------ */}
       <Contact />
     </main>
   );

@@ -1,11 +1,8 @@
-import { practiceAreaData } from "@/constants/data";
-import { ServiceType } from "@/types";
 import Image from "next/image";
 import Link from 'next/link';
-
-interface ServiceProps {
-    service: ServiceType
-}
+import { ServiceType } from "@/types";
+import { ServiceProps } from "@/types";
+import { practiceAreaData } from "@/constants/data";
 
 const Service = ({ service }: ServiceProps) => {
 	return (

@@ -11,6 +11,7 @@ const Contact = () => {
 				<p className="text-lg text-slate-600"><span className="uppercase font-medium">ADDRESS: </span>282 N. glenwood street, levittown, ny</p>
 			</div>
 			<div className="flex-1 grid grid-cols-1 lg:grid-cols-2 gap-3">
+				{/* FIRST NAME */}
 				<div>
 					<label className="text-slate-600" htmlFor="firstName">First Name</label>
 					<input
@@ -21,6 +22,8 @@ const Contact = () => {
 						placeholder="John*"
 					/>
 				</div>
+
+				{/* LAST NAME */}
 				<div>
 					<label className="text-slate-600" htmlFor="lastName">Last Name</label>
 					<input
@@ -31,6 +34,8 @@ const Contact = () => {
 						placeholder="Doe*"
 					/>
 				</div>
+
+				{/* EMAIL */}
 				<div>
 					<label className="text-slate-600" htmlFor="email">Email</label>
 					<input
@@ -41,6 +46,8 @@ const Contact = () => {
 						placeholder="johndoe@gmail.com*"
 					/>
 				</div>
+
+				{/* PHONE NUMBER */}
 				<div>
 					<label className="text-slate-600" htmlFor="phoneNumber">Phone Number</label>
 					<input
@@ -51,6 +58,8 @@ const Contact = () => {
 						placeholder="johndoe@gmail.com*"
 					/>
 				</div>
+
+				{/* SELECT DEPARTMENT */}
 				<div className="lg:col-span-2">
 					<label className="text-slate-600" htmlFor="departmentEmail">Department Email</label>
 					<select id="departmentEmail" className="capitalize w-full py-2 px-4 text-lg rounded outline-none">
@@ -60,10 +69,14 @@ const Contact = () => {
 						<option>health Law</option>
 					</select>
 				</div>
+
+				{/* MESSAGE */}
 				<div className="lg:col-span-2">
 					<label className="text-slate-600" htmlFor="message">Message</label>
 					<textarea  className="w-full py-2 px-4 rounded outline-none resize-none" name="message" id="message" rows={8} placeholder="Write something..." />
 				</div>
+
+				{/* SUBMUT */}
 				<button className="py-2 px-4 rounded bg-blue-400 text-lg text-[#fcfcfc]">Submit</button>
 			</div>
 		</section>

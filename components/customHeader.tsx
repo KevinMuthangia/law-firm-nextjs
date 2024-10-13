@@ -1,12 +1,6 @@
 import Image from "next/image";
 import { StaticImageData } from "next/image";
-
-
-interface CustomHeaderProps {
-	banner? : StaticImageData
-	title: string
-	summary: string
-}
+import { CustomHeaderProps } from "@/types";
 
 const CustomHeader = ({ banner, title, summary}: CustomHeaderProps) => {
 	return (
