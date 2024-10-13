@@ -19,8 +19,8 @@ interface NavLinksProps {
 const NavbarLinks = ({closeMenu, title, link, selected}: NavLinksProps) => {
 	return	(
 		selected 
-		? <li onClick={closeMenu} className="text-blue-500 font-bold text-xl"><Link href={link}>{title}</Link></li>
-		:  <li onClick={closeMenu} className="text-[#475569] hover:text-blue-500 text-xl font-medium"><Link href={link}>{title}</Link></li>
+		? <li onClick={closeMenu} className="text-blue-400 font-bold text-xl"><Link href={link}>{title}</Link></li>
+		:  <li onClick={closeMenu} className="lg:text-[#475569] text-white hover:text-blue-400 text-xl font-medium"><Link href={link}>{title}</Link></li>
 	)
 };
 
